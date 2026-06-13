@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleDark.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- div principal de login. A classe login-container usada no css -->
     <div class="login-container">
-    
-    <!-- título principal da página -->
-    <h1> Login</h1>
-    <!-- Paragrafos são textos auxiliares de instruções para usuário -->
-    <p>Acesse sua conta</p>
 
-    <form>
+        <!-- título principal da página -->
+        <h1> Login</h1>
+        <!-- Paragrafos são textos auxiliares de instruções para usuário -->
+        <p>Acesse sua conta</p>
 
-        <div class="input-group">
-            <label for="email">Email</label> <!-- Campo de entrada do email. Type email é um validador do nosso próprio validador -->
-            <input id="email" type="email" placeholder="Digite seu email">
-            <label for="senha">Senha</label> <!-- Campo de entrada da senha. Type password mascara o que for digitado no campo senha -->
-            <input id="senha" type="password" placeholder="Digite sua senha">
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Digite seu email">
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" placeholder="Digite sua senha">
+            </div>
 
             <button type="submit">Entrar</button>
 
-        </div>
-    </form>
+        </form>
 
-    <div class="footer">
-        <span>Não tem conta?</span>
-        <a href="./register.html">Criar conta</a>
-    
-    </div>
+        <div class="footer">
+            <span>Não tem conta?</span>
+            <a href="./register.html">Criar conta</a>
+        </div>
     </div>
 </body>
+
 </html>

@@ -1,55 +1,56 @@
-*{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Vampiro One", system-ui;
+   
 }
 
-body{
-    height:100vh;
+body {
+    height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #0f2027,#203a43,#2c5364);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffff;
+    font-family: "Vampiro One", system-ui;
 }
 
-.login-container{
-    background: rgba(20,20,20,0.95);
+.login-container {
+    background: rgba(20, 20, 20, 0.95);
     width: 100%;
     max-width: 400px;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
-.login-container h1{
+.login-container h1 {
     font-size: 28px;
     margin-bottom: 8px;
-    color:#ffff;
+    color: #ffff;
 }
 
-.login-container p{
+.login-container p {
     font-size: 14px;
     margin-bottom: 25px;
-    color:#bbbb;
+    color: #bbbb;
 }
 
-.input-group{
+.input-group {
     text-align: left;
     margin-bottom: 18px;
 }
 
-.input-group label{
+.input-group label {
     display: block;
     font-size: 14px;
     margin-bottom: 6px;
     color: #cccc;
 }
 
-.input-group input{
+.input-group input {
     width: 100%;
     padding: 14px;
     border-radius: 8px;
@@ -59,11 +60,11 @@ body{
     font-size: 15px;
 }
 
-.input-group input ::placeholder{
+.input-group input ::placeholder {
     color: #8888;
 }
 
-button{
+button {
     width: 100%;
     padding: 14px;
     margin-top: 10px;
@@ -77,24 +78,97 @@ button{
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover{
+button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 114, 255,0.5);
+    box-shadow: 0 10px 25px rgba(0, 114, 255, 0.5);
 }
 
-.footer{
+.footer {
     margin-top: 20px;
     font-size: 14px;
     color: #aaaa;
 }
 
-.footer a{
+.footer a {
     margin-left: 5px;
-    color:#006cff;
+    color: #006cff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #66d9ff;
+}
+
+.theme-toggle-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 80px;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+body.light {
+    background: linear-gradient(135deg,
+            #e0f2fe,
+            #bae6fd,
+            #7dd3fc);
+}
+
+.login-container {
+background: rgba(20, 20, 20, 0.95);
+}
+
+body.light .login-container h1 {
+color: #0f172a;
+}
+
+body.light .login-container p {
+color: #475569;
+}
+
+body.light .login-container {
+background: #ffffff;
+box-shadow: 0 20px 40px rgba(0, 114, 255, 0.15);
+}
+
+body.light .input-group label {
+color: #334155;
+}
+
+body.light .input-group input {
+background: #f1f5f9;
+color: #0f172a;
+border: 1px solid #cbd5e1;
+}
+
+body.light .input-group input::placeholder {
+color: #94a3b8;
+}
+
+body.light .theme-toggle-btn {
+background-color: rgba(15, 23, 42, 0.1);
+border: 1px solid rgba(15, 23, 42, 0.2);
+color: #0f172a;
+}
+
+body.light .footer {
+color: #64748b;
+}
+body.light .footer a {
+color: #0072ff;
 }

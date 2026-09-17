@@ -1,10 +1,10 @@
-Node.js: permite usar JS fora do navegador
-
-npm: é o gerenciador de pacotes do node.js
-Docker cria o ambiente padronizado para rodar o sistema
-npm init -y gera o arquivo package.json
-npm install express cria rotas com servidor http 
-bcryptjs faz a criptografia da senhas
-jsonwebtoken gera o token da sessão do login
-dotenv mongoose conecta com o ambiente
-nodemon: responsável por reiniciar o servidor automaticamente
+Node.JS permite usar JS fora do navegador (Fogão)
+npm é o gerenciador de pacotes do node.JS (Panelas)
+Docker cria um ambiente padronizado para rodar o sistema, atráves dele fazemos um gerenciamento do nosso banco de dados (Caixa térmica com as marmitas)
+npm init -m(y) gera o arquivo package.json
+npm install express cria as nossas rotas, com o servidor HTTP(endereço de sites)
+bcryptjs faz a criptografia das senhas dentro do nosso JS, a parte de segurança
+jsonwebtoken gera um token da sessão de login
+dotenv conecta com o nosso banco de dados
+mongoose é o banco de dados
+npm install --save-dev nodemon reponsável por reiniciar o servidor quando faz alterações no código

@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+
+//importando as rotas criadas
 const authRoutes = require("./routes/auth");
 
 const app = express();

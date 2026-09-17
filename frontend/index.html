@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="./css/styleDark.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="light">
 
-    <button class="theme-toggle-btn">☀️</button>
+    <button class="theme-toggle-btn">🌞</button>
     <!-- div principal de login. A classe login-container usada no css -->
     <div class="login-container">
 
@@ -34,7 +37,6 @@
             </div>
 
             <button type="submit">Entrar</button>
-            
 
         </form>
 
@@ -44,9 +46,21 @@
         </div>
     </div>
 
+    <!--================================================== 
+    Criando Modal
+    ======================================================-->
 
-    <script src="./js/theme.js"></script>
+    <div id="customAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h3 id="alertTitle">Aviso</h3>
+            <p id="alertMensagem">mensagem</p>
+            <button type="button" id="btnAlertConfirm">OK, ENTENDI</button>
+        </div>
+    </div>
+
     <script src="./js/login.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>

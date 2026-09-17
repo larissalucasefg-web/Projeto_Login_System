@@ -3,7 +3,7 @@
 ========================== */
 
 body{
-    background: linear-gradient(135deg, #0c35c7,#128d5c,#237d3e);
+    background: linear-gradient(135deg, #2d0364,#450977,#6c33c8);
     font-family: "Vampiro One", system-ui;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ body{
 }
 
 body.light{
-    background: linear-gradient(135deg, #31d1f5,#5df996,#4ce141);
+    background: linear-gradient(135deg, #d8b4fe, #a855f7, #7e22ce);
     font-family: "Betania Patmos", cursive;
     display: flex;
     flex-direction: column;
